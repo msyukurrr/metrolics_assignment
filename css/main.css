@@ -202,7 +202,7 @@
       grid-template-columns:  1fr 2fr;
     }
   
-    .row.span {
+    .row-span {
       grid-column-start: 1;
       grid-column-end: -1;
     }
@@ -303,7 +303,23 @@
   
   .main-nav__item:nth-child(1){
     background-color: #25c389;
-    background-image: url(../img/icon/circl)
+    background-image: url(../img/img_icon_circle.svg), url(../img/icon-home-rd.png)
+  }
+  .main-nav__item:nth-child(2){
+    background-color: #ffb901;
+    background-image: url(../img/img_icon_circle.svg), url(../img/icon-link-rd.png)
+  }
+  .main-nav__item:nth-child(3){
+    background-color: #de6262;
+    background-image: url(../img/img_icon_circle.svg), url(../img/img_icon_bullhorn.svg)
+  }
+  .main-nav__item:nth-child(4){
+    background-color: #1691bd;
+    background-image: url(../img/img_icon_circle.svg), url(../img/icon-suitcase-rd.png)
+  }
+  .main-nav__item:nth-child(5){
+    background-color: #166ba2;
+    background-image: url(../img/img_icon_circle.svg), url(../img/envelope-solid.svg)
   }
   
   /* ==========================================================================
