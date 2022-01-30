@@ -125,31 +125,50 @@ div,
 section, 
 footer, 
 header {
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
 }
 
+.row {
+  display: grid;
+  row-gap: 1rem;
+}
 .column {
-  background-color: rgb(243, 222, 194);
-  margin: 1rem;
+  /*background-color: rgb(243, 222, 194); */
+  /*margin: 1rem;*/
 }
 
-   .heading {
-  text-align: center;
+  .heading {
+    font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    text-align: center;
 }
+
+  .subheading {
+    margin-top: -0.8rem;
+    font-size: 0.7rem;
+    text-align: center;
+    color: rgb(128,128,128);
+  }
 
 
 /* small only */
 
-@media screen and (max-width: 39.9375em){}
+@media screen and (max-width: 39.9375em){
+    .s-hide {
+      display: none;
+    }
+}
 
 /* medium and up */
 
 @media screen and (min-width: 40em){
   .row {
-    display: grid;
     width: 85vw;
     max-width: 70rem;
     margin: 0 auto;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin: 0 auto 3rem auto;
   }
 
   .m-col-2{
@@ -177,6 +196,10 @@ header {
   .special-project {
     grid-column-start: 1;
     grid-column-end: -1;
+  }
+
+  .m-hide {
+    display:none;
   }
 }
 
@@ -207,7 +230,12 @@ header {
 
 /* large only */
 
-@media screen and (min-width:64em) and (max-width: 74.9375em) {}
+@media screen and (min-width:64em) and (max-width: 74.9375em) {
+
+  .l-hide {
+    display: none;
+  }
+}
 /* ==========================================================================
    MODULES
    ========================================================================== */
