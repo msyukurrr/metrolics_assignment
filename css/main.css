@@ -131,7 +131,7 @@
   .row {
     display: grid;
     row-gap: 1rem;
-    margin: 0 1rem 3rem 1rem;
+    margin: 1 1rem 3rem 1rem;
   }
 
   .row-no-margin {
@@ -202,7 +202,7 @@
   
       .logo {
         max-height: 3rem;
-        width: 19rem;
+        position: static;
       }
       .s-hide {
         display: none;
@@ -284,6 +284,7 @@
       font-size: 0.8rem;
       text-align: left;
       background-color: rgb (184, 184, 184);
+      background-repeat: no-repeat;
       background-position-x: center;
       background-position-y: center;
       background-size: 2.3rem, 1.4rem;
@@ -298,6 +299,9 @@
       grid-column-end: -1;
     }
   
+    .special-project img {
+     max-height: 20rem;
+    }
     .m-hide {
       display:none;
     }
@@ -346,7 +350,7 @@
     .page__slider {
       background-color: rgb(230,230,230);
     }
-  
+
      /* project portfolio item */
      
      .project {
@@ -381,6 +385,11 @@
     background-color: rgb(230,230,230);
   }
   
+  footer img {
+    width: 50px;
+    height: 50px;
+    grid-template-columns: 50px 50px 50px;
+  }
   /* main nav colours & icons */
   
   .main-nav__item:nth-child(1){
